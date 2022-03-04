@@ -1,0 +1,11 @@
+{
+    "name": "@supreme-palm-tree/tool-generators",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "generate": "plop"
+    },
+    "devDependencies": {
+        "plop": "^3.0.5"
+    }
+}

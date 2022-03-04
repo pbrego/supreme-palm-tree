@@ -1,0 +1,11 @@
+{
+  "name": "@supreme-palm-tree/tool-mocked-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "json-server --watch db.json --port 4000 --delay 200"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

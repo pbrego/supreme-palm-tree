@@ -1,0 +1,8 @@
+import * as React from "react";
+import type { {{pascalCase name}}Props } from "./{{kebabCase name}}.types";
+
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({ children }): JSX.Element => (
+  <div className="{{kebabCase name}}" data-test-id="{{pascalCase name}}ID">
+    {children}
+  </div>
+);

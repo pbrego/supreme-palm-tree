@@ -1,0 +1,14 @@
+import * as React from "react";
+import { screen, render } from "@testing-library/react";
+import type { {{pascalCase name}}Props } from "./{{kebabCase name}}.types";
+import { {{pascalCase name}} }  from "./{{kebabCase name}}";
+
+function setup(props: {{pascalCase name}}) {
+  render(<{{pascalCase name}} {...props} />);
+}
+
+test("Should render", () => {
+  setup({ children: "sample" });
+
+  expect(screen.getByTestID("{{pascalCase name}}ID")).toBeInTheDocument;
+});
