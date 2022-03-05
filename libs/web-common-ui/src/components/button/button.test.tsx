@@ -3,8 +3,8 @@ import { screen, render } from '@testing-library/react'
 import type { ButtonProps } from './button.types'
 import { Button } from './button'
 
-const BUTTON_LABEL = 'Sample';
-const BUTTON_TEST_ID = 'ButtonTestId';
+const BUTTON_LABEL = 'Sample'
+const BUTTON_TEST_ID = 'ButtonTestId'
 
 function setup (props: ButtonProps) {
   render(<Button {...props} />)

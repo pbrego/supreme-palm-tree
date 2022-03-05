@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button } from "@supreme-palm-tree/lib-web-common-ui"
+import { Button } from '@supreme-palm-tree/lib-web-common-ui'
 
 export function App () {
   const [count, setCount] = React.useState(0)
@@ -8,34 +8,14 @@ export function App () {
     <div className="App">
       <header className="App-header">
         <p>Hello Vite + React!</p>
+      </header>
+      <section>
         <p>
           <Button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </Button>
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      </section>
     </div>
   )
 }
