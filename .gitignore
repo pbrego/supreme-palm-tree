@@ -2,6 +2,7 @@ node_modules
 **/dist
 **/lib
 **/build
+**/coverage
 results
 .nyc_output
 *.tsbuildinfo

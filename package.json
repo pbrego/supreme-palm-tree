@@ -12,11 +12,10 @@
     ]
   },
   "scripts": {
-    "lint": "eslint --ext js,ts,tsx .",
     "dev": "yarn vite:dev",
     "test": "lerna run test --stream",
+    "coverage": "jest --coverage",
     "serve": "lerna run serve --stream",
-    "test": "lerna run test --stream",
     "clean": "lerna run clean",
     "build": "lerna run build",
     "lerna:publish": "lerna publish",

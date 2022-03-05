@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import * as React from 'react'
+import { Button } from "@supreme-palm-tree/lib-web-common-ui"
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App () {
+  const [count, setCount] = React.useState(0)
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <Button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
-          </button>
+          </Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.

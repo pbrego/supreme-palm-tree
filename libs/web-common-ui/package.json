@@ -1,14 +1,15 @@
 {
-  "name": "@supreme-palm-tree/web-common-ui",
+  "name": "@supreme-palm-tree/lib-web-common-ui",
   "version": "1.0.0",
   "description": "web components",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "yarn run compile",
     "compile": "tsc -p tsconfig.build.json",
     "prepublishOnly": "yarn run build",
-    "test": "jest --watch",
+    "lint": "eslint --ext js,ts,tsx .",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
@@ -19,9 +20,15 @@
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.7",
     "@types/react": "~17.0.0",
+    "@types/styled-components": "^5.1.24",
+    "eslint": "^7.27.0",
+    "eslint-config-shared": "1.0.0",
     "react": "~17.0.0",
     "react-dom": "~17.0.0",
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.3"
   }
 }

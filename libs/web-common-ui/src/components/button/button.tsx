@@ -1,8 +1,7 @@
-import * as React from "react";
-import type { ButtonProps } from "./button.types";
+import * as React from 'react'
+import { StyledButton } from "./button.styles"
+import type { ButtonProps } from './button.types'
 
-export const Button: React.FC<ButtonProps> = ({ children }): JSX.Element => (
-  <div className="button" data-testid="ButtonTestId">
-    {children}
-  </div>
-);
+export const Button: React.FC<ButtonProps> = (props) => (
+  <StyledButton data-testid="ButtonTestId" {...props} />
+)

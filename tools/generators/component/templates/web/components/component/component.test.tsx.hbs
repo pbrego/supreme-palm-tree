@@ -10,5 +10,5 @@ function setup(props: {{pascalCase name}}) {
 test("Should render", () => {
   setup({ children: "sample" });
 
-  expect(screen.getByTestID("{{pascalCase name}}ID")).toBeInTheDocument;
+  expect(screen.getByTestId("{{pascalCase name}}TestId")).toBeInTheDocument;
 });

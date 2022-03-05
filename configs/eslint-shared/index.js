@@ -5,5 +5,9 @@ module.exports = {
         "prettier",
         "standard"
     ],
-    // rules: rules
+    rules: {
+        "no-use-before-define": "off",
+        "no-unused-expressions": "off",
+        "no-undef": "off"
+    }
 };

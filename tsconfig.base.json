@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@supreme-palm-tree/lib-web-common-ui": [
+          "libs/web-common-ui/index.ts"
+        ]
+      }
+    },
+    "exclude": [""]
+}
