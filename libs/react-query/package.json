@@ -7,10 +7,7 @@
     "build": "yarn run compile",
     "compile": "tsc -p tsconfig.build.json",
     "prepublishOnly": "yarn run build",
-    "lint": "eslint --ext js,ts,tsx .",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "lint": "eslint --ext js,ts,tsx ."
   },
   "peerDependencies": {
     "react": "~17.0.0"
