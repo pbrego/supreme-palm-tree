@@ -3,7 +3,7 @@ import { ErrorHandlingAppExample } from '@supreme-palm-tree/lib-react-query'
 
 export function App () {
   return (
-        <ErrorHandlingAppExample />
+    <ErrorHandlingAppExample />
   )
 }
 

@@ -22,7 +22,8 @@
     "prepare": "husky install",
     "lint": "lerna run lint",
     "generate": "cd tools/generators && yarn generate",
-    "vite:dev": "lerna run --scope @supreme-palm-tree/react-app-vite dev  --stream"
+    "vite:dev": "lerna run --scope @supreme-palm-tree/react-app-vite dev  --stream",
+    "format": "pretty-quick --staged"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

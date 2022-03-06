@@ -1,12 +1,9 @@
 import { QueryClient } from 'react-query'
 
-function queryErrorHandler (error: unknown): void {
-  console.log('defaultError', error)
-}
-
 const defaultQueryClientOptions = {
   queries: {
-    onError: queryErrorHandler,
+    onError: (error) => console.log('react query default error', error),
+    onSuccess: (ok) => console.log('react query default ok', ok),
     refetchOnReconnect: false,
     retry: false
   }
@@ -15,5 +12,3 @@ const defaultQueryClientOptions = {
 export const queryClient = new QueryClient({
   defaultOptions: defaultQueryClientOptions
 })
-
-export const BASE_URL = 'http://localhost:4000'
