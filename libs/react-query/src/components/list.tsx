@@ -6,8 +6,8 @@ const DefaultItem = ({ item }) => (
 
 export const List:React.FC<{
     data: any[];
-    renderItem: (any) => React.FC;
-    fetching: boolean;
+    renderItem?: () => any;
+    fetching?: boolean;
 }> = ({
   data,
   renderItem: Item = DefaultItem,
