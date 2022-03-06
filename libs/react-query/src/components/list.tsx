@@ -15,7 +15,7 @@ export const List:React.FC<{
 }) => {
   return (
         <>
-            {fetching ? <>Fetching...</> : null}
+            {fetching ? <>Updating...</> : null}
             <ul style={{ opacity: fetching && 0.4 }}>
                 {data.map(item => <Item key={item.id} item={item}/>)}
             </ul>
