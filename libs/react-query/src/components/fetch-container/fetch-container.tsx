@@ -14,7 +14,7 @@ export const FetchContainer:React.FC<FetchContainerProps> = ({
         {!isLoading
           ? (
             <>
-                {isError ? <h3>{error.message}</h3> : null}
+                {isError ? <h3>{error}</h3> : null}
                 <List fetching={isFetching} data={users.data} />
             </>
             )
