@@ -1,12 +1,14 @@
 import * as React from 'react'
-import { Button } from '@supreme-palm-tree/lib-web-common-ui'
+// import { Button } from '@supreme-palm-tree/lib-web-common-ui'
+import { ErrorHandlingAppExample } from '@supreme-palm-tree/lib-react-query'
 
 export function App () {
-  const [count, setCount] = React.useState(0)
+  // const [count, setCount] = React.useState(0)
 
   return (
     <div className="App">
-      <header className="App-header">
+      <ErrorHandlingAppExample />
+      {/* <header className="App-header">
         <p>Hello Vite + React!</p>
       </header>
       <section>
@@ -15,7 +17,7 @@ export function App () {
             count is: {count}
           </Button>
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }
