@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { queryClient } from './utils/react-query'

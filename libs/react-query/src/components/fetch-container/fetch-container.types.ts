@@ -3,5 +3,5 @@ export type FetchContainerProps = {
     isFetching: boolean;
     isError: boolean;
     error: unknown;
-    data: unknown;
+    data: any;
 }
