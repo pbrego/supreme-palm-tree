@@ -16,7 +16,7 @@ export const UsersPage = () => {
   return (
     <>
       <h2>Users</h2>
-      <FetchContainer data={data} error={error} isLoading={isLoading} isFetching={isFetching} isError={isError} />
+      <FetchContainer data={data} error={error} isError={isError} isFetching={isFetching} isLoading={isLoading} />
     </>
   );
 };
