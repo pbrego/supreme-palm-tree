@@ -1,15 +1,11 @@
-import * as React from 'react'
-import { useIsFetching, useIsMutating } from 'react-query'
+import * as React from 'react';
+import { useIsFetching, useIsMutating } from 'react-query';
 
 export const LoadingIndicator = () => {
-  const isFetching = useIsFetching()
-  const isMutating = useIsMutating()
+  const isFetching = useIsFetching();
+  const isMutating = useIsMutating();
 
-  const showIndicator = isFetching || isMutating
+  const showIndicator = isFetching || isMutating;
 
-  return (
-    <>
-        {showIndicator ? <span>Loading...</span> : null}
-    </>
-  )
-}
+  return <>{showIndicator ? <span>Loading...</span> : null}</>;
+};

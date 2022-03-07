@@ -7,13 +7,7 @@
       "ignoreChanges": ["**/__tests__/**", "**/*.md"]
     }
   },
-  "packages": [
-    "clients/**",
-    "configs/**",
-    "docs/**",
-    "libs/**",
-    "tools/**"
-  ],
+  "packages": ["clients/**", "configs/**", "docs/**", "libs/**", "tools/**"],
   "version": "independent",
   "useWorkspaces": true,
   "npmClient": "yarn"

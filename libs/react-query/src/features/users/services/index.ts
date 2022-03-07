@@ -1,3 +1,3 @@
-import { request } from '../../../utils/axios'
+import { request } from '../../../utils/axios';
 
-export const getUsers = () => request({ url: '/users' })
+export const getUsers = () => request({ url: '/users' });

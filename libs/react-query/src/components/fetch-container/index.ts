@@ -1,1 +1,1 @@
-export { FetchContainer } from './fetch-container'
+export { FetchContainer } from './fetch-container';

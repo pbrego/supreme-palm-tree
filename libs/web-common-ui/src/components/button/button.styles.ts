@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   color: palevioletred;
@@ -7,4 +7,4 @@ export const StyledButton = styled.button`
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
   border-radius: 3px;
-`
+`;

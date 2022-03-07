@@ -4,7 +4,7 @@ const disableRules = (deprecatedRules) =>
       ...allRules,
       [rule]: 'off',
     }),
-    {}
+    {},
   );
 
 const mapDeprecatedRules = disableRules;
