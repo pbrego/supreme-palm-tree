@@ -4,7 +4,7 @@
       "private": false,
       "conventionalCommits": true,
       "message": "chore(release): publish",
-      "ignoreChanges": ["**/__tests__/**", "**/*.md"]
+      "ignoreChanges": ["**/*.test.*", "**/*.md"]
     }
   },
   "packages": ["clients/**", "configs/**", "docs/**", "libs/**", "tools/**"],

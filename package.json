@@ -18,6 +18,7 @@
     "serve": "lerna run serve --stream",
     "clean": "lerna run clean",
     "build": "lerna run build",
+    "build:libs": "lerna run --scope @supreme-palm-tree/lib-* build",
     "lerna:publish": "lerna publish",
     "prepare": "husky install",
     "lint": "lerna run lint",
