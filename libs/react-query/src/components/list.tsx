@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const DefaultItem = ({ item }) => (
+const DefaultItem:React.FC<{ item: any }> = ({ item }) => (
     <li>{item.name}</li>
 )
 
@@ -16,8 +16,8 @@ export const List:React.FC<{
   return (
         <>
             {fetching ? <>Updating...</> : null}
-            <ul style={{ opacity: fetching && 0.4 }}>
-                {data.map(item => <Item key={item.id} item={item}/>)}
+            <ul style={fetching ? { opacity: 0.4 } : null}>
+                {data && data.map(item => <Item key={item.id} item={item}/>)}
             </ul>
         </>
   )
