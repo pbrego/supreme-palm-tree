@@ -12,7 +12,7 @@
     ]
   },
   "scripts": {
-    "dev": "yarn vite:dev",
+    "dev": "yarn web:dev",
     "test": "lerna run test --stream",
     "coverage": "jest --coverage",
     "serve": "lerna run --scope @supreme-palm-tree/tool-mocked-server serve --stream",
@@ -24,7 +24,7 @@
     "prepare": "husky install",
     "lint": "lerna run lint",
     "generate": "cd tools/generators && yarn generate",
-    "vite:dev": "lerna run --scope @supreme-palm-tree/react-app-vite dev  --stream",
+    "web:dev": "lerna run --scope @supreme-palm-tree/react-app-vite dev  --stream",
     "format": "pretty-quick --staged"
   },
   "devDependencies": {
