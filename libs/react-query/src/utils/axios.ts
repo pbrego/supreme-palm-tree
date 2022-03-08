@@ -27,12 +27,12 @@ client.interceptors.response.use(
 export const request = ({ ...options }) => {
   client.defaults.headers.common.Authorization = 'Bearer token';
 
-  const onError = (error) => {
+  const onError = (error: any) => {
     console.log('service error', error);
     throw error;
   };
 
-  const onSuccess = (response) => {
+  const onSuccess = (response: any) => {
     console.log('service ok', response);
     if (response.status === 200) {
       console.log('service ok: 200');

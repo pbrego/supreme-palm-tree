@@ -6,6 +6,8 @@ const config: Config.InitialOptions = {
   ...baseConfig,
   roots: ['src'],
   setupFilesAfterEnv: ['./jest.setup.ts'],
+  preset: 'vite-jest',
+  testEnvironment: 'jest-environment-jsdom',
   name: pkg.name,
   displayName: pkg.name,
 };

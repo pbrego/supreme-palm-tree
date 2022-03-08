@@ -3,11 +3,11 @@ import { FetchContainer } from '../../../components/fetch-container';
 import { useUsers } from '../hooks';
 
 export const UsersPage = () => {
-  function onError(error) {
+  function onError(error: any) {
     console.log('react query error', error);
   }
 
-  function onSuccess(ok) {
+  function onSuccess(ok: any) {
     console.log('react query ok', ok);
   }
 
