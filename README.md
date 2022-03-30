@@ -20,6 +20,7 @@
 - Husky: Git hooks
 - Commitlint: Conventional commit
 - Plop: Generate code from templates
+- Jest testing configured and centralized coverage
 - JSON server: Easy to serve json data
 
 TS, lint
