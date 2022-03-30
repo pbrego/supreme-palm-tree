@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "yarn web:dev",
     "test": "lerna run test --stream",
-    "coverage": "jest --coverage",
+    "coverage": "node ./scripts/aggregate-packages-coverage.js && nyc report --reporter lcov",
     "serve": "lerna run --scope @supreme-palm-tree/tool-mocked-server serve --stream",
     "clean": "lerna run clean",
     "build": "lerna run --scope @supreme-palm-tree/lib-* build",
@@ -44,6 +44,7 @@
     "jest-watch-typeahead": "^0.6.4",
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.1",
+    "nyc": "^15.1.0",
     "prettier": "^2.3.0",
     "prettier-eslint": "^12.0.0",
     "pretty-quick": "^3.1.1",

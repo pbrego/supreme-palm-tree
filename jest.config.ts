@@ -1,7 +1,7 @@
 import type { Config } from '@jest/types';
 import baseConfig from './jest.config.base';
 
-const projectPaths = ['<rootDir>/libs/web-common-ui/', '<rootDir>/clients/react-app-vite/'];
+const projectPaths = ['<rootDir>/libs/web-common-ui/', '<rootDir>/libs/react-query/'];
 
 const config: Config.InitialOptions = {
   ...baseConfig,
