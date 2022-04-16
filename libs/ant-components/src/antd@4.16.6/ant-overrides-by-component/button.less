@@ -1,0 +1,38 @@
+// Button
+@btn-font-weight: 500;
+@btn-shadow: none;
+@btn-primary-shadow: none;
+@btn-text-shadow: none;
+
+@btn-border-radius-base: 8px;
+
+@btn-default-color: @primary-color;
+@btn-default-border: @primary-color;
+
+@btn-padding-vertical-base: @padding-xs - @border-width-base;
+@btn-padding-vertical-lg: @padding-md - @border-width-base;
+@btn-padding-vertical-sm: @padding-xss - @border-width-base;
+@btn-padding-horizontal-base: @padding-sm - @border-width-base;
+@btn-padding-horizontal-sm: @padding-xs - @border-width-base;
+
+.button-size(@height; @padding-horizontal; @font-size; @border-radius) {
+  height: auto;
+  padding: 0 @padding-horizontal;
+  font-size: @font-size;
+  border-radius: @border-radius;
+}
+
+.ant-btn {
+  padding-top: @btn-padding-vertical-base;
+  padding-bottom: @btn-padding-vertical-base;
+
+  &-sm {
+    padding-top: @btn-padding-vertical-sm;
+    padding-bottom: @btn-padding-vertical-sm;
+  }
+
+  &-lg {
+    padding-top: @btn-padding-vertical-lg;
+    padding-bottom: @btn-padding-vertical-lg;
+  }
+}

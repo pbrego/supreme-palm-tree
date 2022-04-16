@@ -16,4 +16,14 @@ export default defineConfig({
       include: [/node_modules/],
     },
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        //  Support inline  JavaScript, Support  less  inline  JS
+        javascriptEnabled: true,
+        //  rewrite  less  Variable , Custom style
+        // modifyVars: themeVariables,
+      },
+    },
+  },
 });

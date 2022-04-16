@@ -1,7 +1,7 @@
 const component = require('./component');
-const feature = require('./feature');
+const library = require('./library');
 
 module.exports = (plop) => {
   plop.setGenerator(component.name, component.options);
-  plop.setGenerator(feature.name, feature.options);
+  plop.setGenerator(library.name, library.options);
 };
