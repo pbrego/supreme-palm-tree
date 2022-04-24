@@ -1,5 +1,5 @@
 {
-  "name": "@supreme-palm-tree/lib-ant-components",
+  "name": "@supreme-palm-tree/lib-module-test",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -12,7 +12,6 @@
     "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
-    "antd": "^4.20.0",
     "react": "~17.0.0"
   },
   "devDependencies": {
@@ -26,5 +25,13 @@
     "react-dom": "~17.0.0",
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "i18next": "^21.6.16",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "react-i18next": "^11.16.7",
+    "react-query": "^3.38.0",
+    "react-router-dom": "^6.3.0"
   }
 }
